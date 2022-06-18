@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-card {
+  transition: 0.5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-card:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.social-links ul {
+  padding: 0px;
+  margin: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 2px 0px;
+  font-size: 20px;            
+}
+.social-links ul li a {
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.social-links ul li:hover a {
+  background-color: #333333;
+  color: #fff;
+  transition: 0.5s;
 }
